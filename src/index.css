@@ -1,13 +1,83 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+  padding: 50px 15px 50px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btn.btn-light {
+  border-radius: 0%;
+  width: 15%;
+  height: 60px;
+  font-size: 20px;
+}
+
+.searchbar {
+  display: block;
+  width: 70%;
+  height: 60px;
+  font-size: 25px;
+}
+
+.MovieCard {
+  padding: 20px;
+  margin: 7%;
+  background-color: white;
+  box-shadow: 0px 0px 30px #223352;
+  border-radius: 6px;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.movie-heading {
+  padding: 15px 15px 25px 15px;
+  text-align: center;
+}
+.movie-poster {
+  flex: 1;
+  justify-self: center;
+  padding-left: 10%;
+}
+.poster {
+  border: groove;
+}
+.movie-info {
+  flex: 1;
+  padding-right: 6%;
+  justify-self: center;
+  align-items: center;
 }
