@@ -81,3 +81,9 @@ header h1 {
   justify-self: center;
   align-items: center;
 }
+.error {
+  text-align: center;
+  color: #e9da0a;
+  font-size: 30px;
+  margin-top: 6%;
+}

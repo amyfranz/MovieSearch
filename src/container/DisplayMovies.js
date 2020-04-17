@@ -1,17 +1,18 @@
 import React from "react";
-import MovieCard from "./MovieCard";
+import MovieCard from "../component/MovieCard";
 
 export default function DisplayMovies(props) {
+  const { movies } = props;
   const moviecards =
     props.length > 0 ? (
-      props.movies.map(movie => (
+      movies.map((movie) => (
         <li key={movie.imdbID}>
-          <MovieCard movie={movie} />
+          <MovieCard movie />
         </li>
       ))
     ) : (
-      <li key={props.movies.imdbID}>
-        <MovieCard movie={props.movies} />
+      <li key={movies.imdbID}>
+        <MovieCard movie={movies} />
       </li>
     );
 
